@@ -12,6 +12,12 @@ public class SalariedEmployee extends Employee {
     protected double yearlySalary;
     protected double numPayPeriods;
 
+    public SalariedEmployee(String firstName, char midInitial, String lastName, String EmpID, double yearlySalary, double numPayPeriods) {
+        super(firstName, midInitial, lastName, EmpID);
+        this.yearlySalary = yearlySalary;
+        this.numPayPeriods = numPayPeriods;
+    }
+
     public String getFirstName() {
         return firstName.toUpperCase();
     }

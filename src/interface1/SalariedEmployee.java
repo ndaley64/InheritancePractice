@@ -16,6 +16,15 @@ public class SalariedEmployee implements Employee {
     protected double yearlySalary;
     protected double numPayPeriods;
 
+    public SalariedEmployee(String firstName, char midInitial, String lastName, String EmpID, double yearlySalary, double numPayPeriods) {
+        this.firstName = firstName;
+        this.midInitial = midInitial;
+        this.lastName = lastName;
+        this.EmpID = EmpID;
+        this.yearlySalary = yearlySalary;
+        this.numPayPeriods = numPayPeriods;
+    }
+
      public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

@@ -15,6 +15,15 @@ public class HourlyEmployee implements Employee {
     protected String EmpID;
     protected double hourlyPay;
     protected double hoursWorked;
+
+    public HourlyEmployee(String firstName, char midInitial, String lastName, String EmpID, double hourlyPay) {
+        this.firstName = firstName;
+        this.midInitial = midInitial;
+        this.lastName = lastName;
+        this.EmpID = EmpID;
+        this.hourlyPay = hourlyPay;
+        this.hoursWorked = hoursWorked;
+    }
     
     public void setFirstName(String firstName) {
         this.firstName = firstName;

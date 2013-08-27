@@ -12,6 +12,11 @@ public class HourlyEmployee extends Employee {
     protected double hourlyPay;
     protected double hoursWorked;
 
+    public HourlyEmployee(String firstName, char midInitial, String lastName, String EmpID, double hourlyPay) {
+        super(firstName, midInitial, lastName, EmpID);
+        this.hourlyPay = hourlyPay;
+    }
+
     public String getFirstName() {
         return firstName.toUpperCase();
     }

@@ -10,6 +10,11 @@ package abstract1;
  */
 public class SalaryPlusBonusEmployee extends SalariedEmployee{
     protected double lastBonus;
+
+    public SalaryPlusBonusEmployee(double lastBonus, double yearlySalary, double numPayPeriods, String firstName, char midInitial, String lastName, String EmpID) {
+        super(firstName, midInitial, lastName, EmpID, yearlySalary, numPayPeriods);
+        this.lastBonus = lastBonus;
+    }
     
     public double getPayWithBonus(double bonus){
         lastBonus = bonus;
