@@ -25,5 +25,5 @@ public interface Employee {
 
     public String getEmpID();
 
-    
+    public double getPay();
 }

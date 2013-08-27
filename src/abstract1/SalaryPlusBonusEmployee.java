@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package interface1;
+package abstract1;
 
 /**
  *
@@ -12,6 +12,8 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
     protected double lastBonus;
     
     public double getPayWithBonus(double bonus){
+        lastBonus = bonus;
+        
         return (yearlySalary / numPayPeriods) + bonus;
     }
 }
