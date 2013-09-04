@@ -9,10 +9,10 @@ package abstract1;
  * @author Nathaniel
  */
 public abstract class Employee {
-    protected String firstName;
-    protected char midInitial;
-    protected String lastName;
-    protected String EmpID;
+    private String firstName;
+    private char midInitial;
+    private String lastName;
+    private String EmpID;
 
     public Employee() {
         firstName = "John";
@@ -44,13 +44,21 @@ public abstract class Employee {
         this.EmpID = EmpID;
     }
 
-    public abstract String getFirstName();
+    public String getFirstName() {
+        return firstName;
+    }
 
-    public abstract char getMidInitial();
+    public char getMidInitial() {
+        return midInitial;
+    }
 
-    public abstract String getLastName();
+    public String getLastName() {
+        return lastName;
+    }
 
-    public abstract String getEmpID();
+    public String getEmpID() {
+        return EmpID;
+    }
 
     public abstract double getPay();
 }

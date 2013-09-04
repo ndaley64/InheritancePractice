@@ -9,7 +9,7 @@ package concrete;
  * @author Nathaniel
  */
 public class SalaryPlusBonusEmployee extends SalariedEmployee{
-    protected double lastBonus;
+    private double lastBonus;
 
     public SalaryPlusBonusEmployee(double lastBonus, String firstName, char midInitial, String lastName, String EmpID, double yearlySalary, double numPayPeriods) {
         super(firstName, midInitial, lastName, EmpID, yearlySalary, numPayPeriods);
@@ -17,6 +17,7 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
     }
     
     public double getPay(double bonus){
-        return (yearlySalary / numPayPeriods) + bonus;
+        this.lastBonus = bonus;
+        return (this.getYearlySalary()/ this.getNumPayPeriods()) + bonus;
     }
 }

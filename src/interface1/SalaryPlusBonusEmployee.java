@@ -17,6 +17,7 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
     }
     
     public double getPayWithBonus(double bonus){
-        return (yearlySalary / numPayPeriods) + bonus;
+        this.lastBonus = bonus;
+        return (this.getYearlySalary()/ this.getNumPayPeriods()) + bonus;
     }
 }

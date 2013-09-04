@@ -9,7 +9,7 @@ package abstract1;
  * @author Nathaniel
  */
 public class SalaryPlusBonusEmployee extends SalariedEmployee{
-    protected double lastBonus;
+    private double lastBonus;
 
     public SalaryPlusBonusEmployee(double lastBonus, double yearlySalary, double numPayPeriods, String firstName, char midInitial, String lastName, String EmpID) {
         super(firstName, midInitial, lastName, EmpID, yearlySalary, numPayPeriods);
@@ -19,6 +19,6 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
     public double getPayWithBonus(double bonus){
         lastBonus = bonus;
         
-        return (yearlySalary / numPayPeriods) + bonus;
+        return (this.getYearlySalary() / this.getNumPayPeriods()) + bonus;
     }
 }

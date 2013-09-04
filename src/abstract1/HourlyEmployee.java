@@ -9,28 +9,12 @@ package abstract1;
  * @author Nathaniel
  */
 public class HourlyEmployee extends Employee {
-    protected double hourlyPay;
-    protected double hoursWorked;
+    private double hourlyPay;
+    private double hoursWorked;
 
     public HourlyEmployee(String firstName, char midInitial, String lastName, String EmpID, double hourlyPay) {
         super(firstName, midInitial, lastName, EmpID);
         this.hourlyPay = hourlyPay;
-    }
-
-    public String getFirstName() {
-        return firstName.toUpperCase();
-    }
-
-    public char getMidInitial() {
-        return midInitial;
-    }
-
-    public String getLastName() {
-        return lastName.toUpperCase();
-    }
-
-    public String getEmpID() {
-        return EmpID;
     }
 
     public void setHourlyPay(double hourlyPay) {
@@ -49,6 +33,7 @@ public class HourlyEmployee extends Employee {
         return hoursWorked;
     }
     
+    @Override
     public double getPay(){
         return hoursWorked * hourlyPay;
     }

@@ -9,8 +9,8 @@ package concrete;
  * @author Nathaniel
  */
 public class HourlyEmployee extends Employee {
-    protected double hourlyPay;
-    protected double hoursWorked;
+    private double hourlyPay;
+    private double hoursWorked;
 
     public HourlyEmployee(String firstName, char midInitial, String lastName, String EmpID, double hourlyPay) {
         super(firstName, midInitial, lastName, EmpID);

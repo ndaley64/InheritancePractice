@@ -9,10 +9,10 @@ package concrete;
  * @author Nathaniel
  */
 public class Employee {
-    protected String firstName;
-    protected char midInitial;
-    protected String lastName;
-    protected String EmpID;
+    private String firstName;
+    private char midInitial;
+    private String lastName;
+    private String EmpID;
 
     public Employee() {
         firstName = "John";
